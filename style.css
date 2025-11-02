@@ -1,79 +1,261 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
 
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box
-    ;
-}
-.parent{
-    width: 1100px;
-    margin: auto;
-    border: 2px solid red;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 15px;
-}
-.parent div{
-height: 500px;
-display: grid;
-place-items: center;
-color: white;
-}
-.kode-zen{
-    background-color: brown;
-    
-}
-.responsive-web{
-    background-color: blue;
-}
-.practice-code{
-    background-color: antiquewhite;
-}
-.Eat-code{
-    background-color: aqua;
+    box-sizing: border-box;
 }
 
-@media only screen and (max-width: 688px) {
-    .parent{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+nav {
+    display: flex;
+}
+
+nav {
+    display: flex;
+    background-color: #1C2833;
+    height: 80px;
     width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px 0px 80px;
+    color: #fff;
+}
+
+.logo-text {
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(236, 166, 166);
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style-type: none;
+    margin: 0 8px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 50%;
+    color: bisque;
+    padding: 12px 12px;
+    transition: 0.5s;
+    text-transform: uppercase;
+
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: brown;
+}
+
+#click {
+    display: none;
+
+}
+
+.menu-btn {
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+
+}
+
+/* Responsive start code here */
+
+@media only screen and (max-Width: 940px) {
+
+    .menu-btn {
+        display: block;
     }
-    .kode-zen{
-    background-color: rgb(218, 207, 207);
-    
+
+    nav ul {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        flex-direction: column;
+        text-align: center;
+        background: #1C2833;
+        height: 100vh;
+        width: 100%;
+        padding-top: 20px;
+        transition: all 0.5s ease;
+    }
+
+    #click:checked~.menu-btn i::before {
+        content: "\f00d";
+    }
+
+    #click:checked~ul {
+        left: 0%;
+    }
+
+    nav ul li {
+        margin: 40px 0;
+    }
+
+    nav ul li a:hover {
+        font-size: 22px;
+        color: #fff;
+        background-color: cadetblue;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+        background: none;
+        color: rgb(218, 133, 133);
+    }
 }
-.responsive-web{
-    background-color: rgb(170, 130, 19);
+
+/* header section code stat */
+
+header {
+    background-image: url("image/dan-freeman-wAn4RfmXtxU-unsplash.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-.practice-code{
-    background-color: rgb(19, 116, 59);
+
+/* first section of main tag code start  */
+#first-section {
+    background-color: #1C2833;
 }
-.Eat-code{
-    background-color: aqua;
+
+.service-titel {
+    text-align: center;
+    color: #fff;
+    padding: 50px 0;
+    font-size: 25px;
 }
-}
-@media only screen and (min-width: 688px) and (max-width: 992px) {
-    .parent{
+
+#service-parent {
+    width: 1100px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    grid-gap: 25px;
+}
+
+.first-child-div {
+    background-color: #fff;
+    text-align: center;
+    color: black;
+    padding: 30px 20px;
+    border-radius: 5px;
+    border: 1px solid green;
+    box-shadow: 5px 5px 10px gray;
+
+}
+
+.first-child-div i {
+    font-size: 40px;
+}
+
+.first-child-div h2 {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+
+
+
+/* second srction code start hear  */
+
+#second-section {
+    background-color: #154360;
+}
+
+.heading-text{
+    text-align: center;
+    color: bisque;
+    font-size: 32px;
+    padding: 30px 0px;
+    letter-spacing: 0.2em;
+}
+
+#smart-id-parent {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.smart-text {
+    color: #fff;
+}
+
+.smart-text h2 {
+    margin: 20px 0;
+    font-size: 30px;
+}
+
+.smart-text a {
+    text-decoration: none;
+    font-size: 22px;
+    background-color: bisque;
+    color: black;
+    padding: 10px 30px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 40px;
+
+}
+
+/* first section responsive code start  */
+
+@media only screen and (max-Width: 688px) {
+
+    #service-parent {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+        width: 100%;
     }
-    .kode-zen{
-    background-color: rgb(128, 105, 44);
-    
+
+    #smart-id-parent {
+        display: block;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .smart-image {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
 }
-.responsive-web{
-    background-color: rgb(7, 7, 8);
-}
-.practice-code{
-    background-color: rgb(66, 45, 17);
-}
-.Eat-code{
-    background-color: rgb(91, 141, 141);
-}
+
+/* second section css code start   */
+
+
+@media only screen and (min-Width: 689px) and (max-width: 1099px) {
+
+    #service-parent {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+        width: 100%;
+    }
+
+    #smart-id-parent {
+        margin-left: 70px;
+        margin-right: 70px;
+        display: block;
+    }
+
+    .smart-image {
+        width: 100%;
+        margin-bottom:70px;
+    }
+
 }
