@@ -337,18 +337,20 @@ header {
 
 #contacr-section {
     background-image: url(image/pexels-pixabay-45853.jpg);
-    padding: 100px 0;
+    padding: 80px 0;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
 
 }
 
 form {
-    background-color: #2e357a;
+    background-color: #c0c1d1;
     max-width: 50%;
     margin: 0 auto;
-    padding: 50px 60px;
+    padding: 40px 60px;
     border-radius: 10px;
 }
 
@@ -357,7 +359,6 @@ form h2 {
     text-align: center;
     font-size: 30px;
     letter-spacing: 0.1em;
-
 }
 
 form p {
@@ -400,10 +401,110 @@ form p {
     background-color: #536492;
 }
 
+/* five box section code  */
+
+#fivebox-scection {
+    background-color: #07254f;
+    color: white;
+    padding: 100px 0;
+
+}
+
+#fivebox-parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 45px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.captianbox {
+    border: 4px solid;
+    padding: 10px 20px;
+}
+
+.captianbox i {
+    display: inline-block;
+    font-size: 30px;
+    padding: 0 370px, 1110px, 1130px;
+    color: #4497D3;
+}
+
+.captianbox h5 {
+    margin-bottom: 20px;
+}
+
+.captianbox p {
+    color: #6d809C;
+    font: size 14px;
+}
 
 
+.captianbox:nth-child(2) {
+    border: 4px solid rgb(138, 204, 100);
 
+}
 
+.captianbox:nth-child(3) {
+    border: 4px solid rgb(170, 15, 41);
+
+}
+
+.captianbox:nth-child(4) {
+    border: 4px solid rgb(12, 12, 12);
+
+}
+
+.captianbox:nth-child(5) {
+    border: 4px solid rgb(22, 6, 68);
+
+}
+
+.captianbox:nth-child(6) {
+    border: 4px solid rgb(7, 117, 66);
+
+}
+
+.box-heading-text {
+    line-height: 1.5;
+    letter-spacing: 0.1em;
+    margin-top: 30px;
+}
+
+/* seven section code  */
+#seven-section {
+    padding: 100px 0;
+}
+
+#parent-container {
+    display: flex;
+    margin-left: 200px;
+    margin-right: 200px;
+    gap: 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cartun-bady {
+    width: 100%;
+}
+
+.cartun-bady img {
+    width: 100%;
+}
+
+.seven-text-pragrap {
+    font-size: 30px;
+}
+
+.seven-text-pragrap p {
+    margin: 20px 0;
+}
+
+.seven-text-pragrap ul li {
+    list-style-position: inside;
+    margin: 10px 0;
+}
 
 /* first section responsive code start  */
 
@@ -452,20 +553,48 @@ form p {
     .down-icon {
         text-align: left;
     }
+
     .down-icon {
         text-align: left;
     }
+
     .down-icon a {
         margin: 10px 5px
     }
+
     .single-text h3 {
         margin-top: 50px;
     }
+
     /* contact section code  */
-    form{
+    form {
         background-color: #2e357a;
         max-width: 90%;
         padding: 20px 30px;
+    }
+
+    /* box section responsive code  */
+
+    #fivebox-parent {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 25px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .box-heading-text {
+        text-align: center;
+    }
+
+    /* seven section code  */
+    #parent-container{
+        display: block;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+     .seven-text-pragrap{
+        margin-bottom: 70px;
     }
 }
 
@@ -523,4 +652,28 @@ form p {
     .single-text h3 {
         margin-top: 50px;
     }
+
+    /* box section responsive code  */
+
+    #fivebox-parent {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 35px;
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+
+    .box-heading-text {
+        text-align: center;
+    }
+ /* seven code section  */
+ #parent-container{
+        display: block;
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+     .seven-text-pragrap{
+        margin-bottom: 80px;
+    }
+   
 }
