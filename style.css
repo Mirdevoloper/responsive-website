@@ -474,9 +474,11 @@ form p {
 /* seven section code  */
 #seven-section {
     padding: 100px 0;
+    background-color: #0c1d2e;
 }
 
 #parent-container {
+    color: #e03030;
     display: flex;
     margin-left: 200px;
     margin-right: 200px;
@@ -505,6 +507,65 @@ form p {
     list-style-position: inside;
     margin: 10px 0;
 }
+
+/* fotter section code start  */
+#footer-section {
+    background-color: #132536;
+    padding: 100px 0 50px 0;
+}
+
+#footer-parent {
+    display: flex;
+    margin-left: 200px;
+    margin-right: 200px;
+    color: #c0c1d1;
+    gap: 50px;
+}
+
+.icon-box {
+    width: 100%;
+
+}
+
+.icon-box h5 {
+    margin-bottom: 30px;
+    letter-spacing: 3px;
+}
+
+.second-box p {
+    margin: 10px;
+}
+
+.second-box a {
+    color: white;
+    text-decoration: none;
+}
+
+.third-box ul {
+    display: flex;
+}
+
+.third-box ul li {
+    list-style-type: none;
+}
+
+.third-box ul li a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 5px;
+    background-color: #c0cec6;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.third-box ul li a i {
+    color: #11af11de;
+}
+
+.icon-box span {
+    color: rgb(133, 197, 13);
+}
+
 
 /* first section responsive code start  */
 
@@ -588,13 +649,33 @@ form p {
     }
 
     /* seven section code  */
-    #parent-container{
+
+    #parent-container {
+
         display: block;
         margin-left: 30px;
         margin-right: 30px;
     }
-     .seven-text-pragrap{
+
+    .seven-text-pragrap {
         margin-bottom: 70px;
+    }
+
+    /* footer section code start   */
+    #footer-parent {
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .icon-box {
+        text-align: center;
+    }
+
+    .third-box ul {
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -666,14 +747,19 @@ form p {
     .box-heading-text {
         text-align: center;
     }
- /* seven code section  */
- #parent-container{
+
+    /* seven code section  */
+    #parent-container {
         display: block;
         margin-left: 70px;
         margin-right: 70px;
     }
-     .seven-text-pragrap{
+    .seven-text-pragrap {
         margin-bottom: 80px;
     }
-   
+  /* Start fotter section code  */
+  #footer-parent{
+    margin-left: 70px;
+    margin-right: 70px;
+  }
 }
